@@ -1,0 +1,29 @@
+.destination-container {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .destination-container {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+  .destination-container h2 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .destination-container {
+    text-align: center;
+    padding: 0;
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  }
+  .destination-container h2 {
+    padding-top: 10rem;
+    font-size: 1rem;
+  }
+}

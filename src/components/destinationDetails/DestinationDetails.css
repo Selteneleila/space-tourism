@@ -1,0 +1,128 @@
+.destination-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15rem 5rem 0 5rem;
+}
+
+.planet-image {
+  height: auto;
+  animation: rotateMoon infinite 20s linear;
+}
+
+@keyframes rotateMoon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.destination-details h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.destination-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #d0d6f9;
+}
+hr {
+  margin-top: 4rem;
+  border-bottom: 1px solid #8d8e93;
+}
+.stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.stat h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  color: #d0d6f9;
+}
+
+.stat p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+  color: white;
+}
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .destination-details {
+    justify-content: center;
+  }
+  .text-content {
+    align-items: center;
+    text-align: center;
+    width: 150%;
+  }
+  .planet-image {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .destination-details h2 {
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .destination-details p {
+    font-size: 1.15rem;
+    line-height: 2;
+  }
+  hr {
+    margin-top: 2.5rem;
+    border-bottom: 3px solid #8d8e93;
+  }
+  .stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
+  .stat h3 {
+    font-size: 0.85rem;
+  }
+  .stat p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 500px) {
+  .destination-details {
+    justify-content: center;
+  }
+  .planet-image {
+    width: 10rem;
+    height: 10rem;
+  }
+  .text-content {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .destination-details h2 {
+    font-size: 4rem;
+  }
+  .destination-details p {
+    font-size: 1rem;
+    line-height: 2;
+  }
+}

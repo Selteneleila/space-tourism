@@ -1,0 +1,126 @@
+.home-container {
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.home-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15rem 5rem 0 5rem;
+}
+.text {
+  width: 50%;
+}
+.home-container h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.home-container h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  letter-spacing: 0.3rem;
+  color: white;
+}
+
+.home-container p {
+  color: #d0d6f9;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  line-height: 2rem;
+}
+
+.explore {
+  position: relative;
+}
+
+.explore-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  color: #000;
+  border-color: transparent;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 50px #fdd);
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .home-container {
+    text-align: center;
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    flex-direction: row;
+  }
+  .home-content {
+    width: max-content;
+    text-align: center;
+  }
+
+  .home-container h1 {
+    font-size: 4rem;
+    letter-spacing: 0.7rem;
+  }
+  .home-container h2 {
+    font-size: 1rem;
+  }
+  .home-container p {
+    font-size: 1rem;
+  }
+  .explore {
+    padding: 6rem;
+  }
+  .explore-button {
+    width: 14rem;
+    height: 14rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 500px) {
+  .home-container {
+    text-align: center;
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+  }
+  .home-content {
+    padding: 0 0 0 0;
+  }
+
+  .home-container h1 {
+    font-size: 2.55rem;
+  }
+
+  .home-container h2 {
+    font-size: 0.55rem;
+    margin-top: 5rem;
+  }
+
+  .home-container p {
+    color: #d0d6f9;
+    font-size: 0.65rem;
+  }
+  .explore-button {
+    width: 8rem;
+    height: 8rem;
+    font-size: 0.75rem;
+  }
+}

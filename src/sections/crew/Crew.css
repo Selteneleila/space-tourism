@@ -1,0 +1,24 @@
+.crew-container {
+  background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+@media (max-width: 1024px) {
+  .crew-container {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media (max-width: 500px) {
+  .crew-container {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    padding: 10rem 1rem 0 1rem;
+  }
+  .crew-container h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
