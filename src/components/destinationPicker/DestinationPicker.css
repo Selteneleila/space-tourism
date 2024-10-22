@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .destination-picker {
     display: flex;
     gap: 2rem;

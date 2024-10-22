@@ -24,18 +24,11 @@ function Navbar() {
     return `/${section.toLowerCase()}`;
   };
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <nav className="nav">
+    <nav className="nav-container">
       <div className="logo">
         <img src={Logo} alt="logo" onClick={handleClick} />
       </div>
-      {/* <div className="burger-icon" onClick={toggleMenu}>
-        <img src={BurgerIcon} alt="menu icon" />
-      </div> */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         {sections.map(({ number, label }) => (
           <NavLink

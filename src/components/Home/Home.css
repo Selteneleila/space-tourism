@@ -68,21 +68,21 @@
   .home-container {
     text-align: center;
     background-image: url("../../assets/home/background-home-tablet.jpg");
-    flex-direction: row;
   }
   .home-content {
     width: max-content;
     text-align: center;
+    flex-direction: column;
   }
 
-  .home-container h1 {
+  .text h1 {
     font-size: 4rem;
     letter-spacing: 0.7rem;
   }
-  .home-container h2 {
+  .text h2 {
     font-size: 1rem;
   }
-  .home-container p {
+  .text p {
     font-size: 1rem;
   }
   .explore {

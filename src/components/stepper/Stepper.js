@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Stepper.css";
 
-function Stepper({ onStepChange }) {
-  const [activeStep, setActiveStep] = useState(0);
-  const steps = ["1", "2", "3"];
+function Stepper({ activeStep, onStepChange }) {
+  const steps = [1, 2, 3];
 
   const handleStepClick = (index) => {
-    setActiveStep(index);
     onStepChange(index);
   };
 

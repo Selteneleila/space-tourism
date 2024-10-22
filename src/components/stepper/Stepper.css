@@ -10,14 +10,14 @@
   justify-content: center;
   width: 5rem;
   height: 5rem;
-  border-color: transparent;
   margin-bottom: 2rem;
   border-radius: 50%;
-  border-color: lightgray;
+  border: 1px solid white;
   color: white;
   background-color: transparent;
   font-size: 1.5rem;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .stepper-btn.active {
   background-color: white;
@@ -26,8 +26,6 @@
 
 .stepper-btn.inactive:hover {
   transform: scale(1.1);
-  border-color: white;
-  color: white;
 }
 
 @media (max-width: 1024px) {
@@ -43,7 +41,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .stepper-container {
     flex-direction: row;
     align-items: center;

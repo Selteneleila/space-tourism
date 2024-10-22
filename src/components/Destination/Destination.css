@@ -1,11 +1,18 @@
 .destination-details {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 10rem;
+}
+.title-container {
+  margin-bottom: 6rem;
+}
+.content-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 15rem 5rem 0 5rem;
 }
-
 .planet-image {
   height: auto;
   animation: rotateMoon infinite 20s linear;
@@ -24,16 +31,18 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-
-.destination-details h2 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  padding: 0;
+.left-container {
+  padding: 5rem;
 }
-
-.destination-details p {
+.left-container h2 {
+  font-size: 1.5rem;
+}
+.text-content h2 {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+}
+.text-content p {
   font-size: 1.2rem;
   line-height: 1.6;
   color: #d0d6f9;
@@ -105,7 +114,7 @@ hr {
 }
 
 /* Mobile styles */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .destination-details {
     justify-content: center;
   }

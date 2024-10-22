@@ -21,7 +21,7 @@
     margin: 4rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .dots-indicator {
     margin: 2rem;
   }
