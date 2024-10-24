@@ -7,14 +7,14 @@ import "./Destination.css";
 const Destination = () => {
   const location = useLocation();
   const sectionNumber = location.state?.number;
-
+  console.log(sectionNumber);
   const [currentDestination, setCurrentDestination] = useState("Moon");
 
   const destinationData = data.destinations;
   const currentDest = destinationData.find(
     (destination) => destination.name === currentDestination
   );
-
+  console.log(currentDestination.travel);
   return (
     <div className="destination-details">
       <div className="title-container">
@@ -39,11 +39,11 @@ const Destination = () => {
           <div className="stats">
             <div className="stat">
               <h3>Avg. Distance</h3>
-              <p>{currentDestination.distance}</p>
+              <p>{currentDest.distance}</p>
             </div>
             <div className="stat">
               <h3>Est. Travel Time</h3>
-              <p>{currentDestination.travel}</p>
+              <p>{currentDest.travel}</p>
             </div>
           </div>
         </div>
